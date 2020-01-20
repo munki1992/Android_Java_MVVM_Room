@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "munki.db.room"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    // dataBidning
+    dataBinding { enabled = true }
+
+    // Java 1.8
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    /************************************************************************************************************************************************/
+
+    /* Android Support */
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    /************************************************************************************************************************************************/
+
+    // MultiDex
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    /************************************************************************************************************************************************/
+
+    // Room components
+    implementation "androidx.room:room-runtime:$rootProject.roomVersion"
+    annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion"
+    androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
+
+    /************************************************************************************************************************************************/
+
+    // lifecycle - ViewModel(LiveData)
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0-rc03'
+    annotationProcessor 'androidx.lifecycle:lifecycle-common-java8:2.1.0'
+
+    /************************************************************************************************************************************************/
+
+    // dagger
+    implementation 'com.google.dagger:dagger-android-support:2.25.4'
+    implementation 'com.google.dagger:dagger:2.25.4'
+    implementation 'org.glassfish:javax.annotation:10.0-b28'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.25.4'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.25.4'
+}
