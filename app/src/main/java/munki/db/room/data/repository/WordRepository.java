@@ -13,19 +13,19 @@ import munki.db.room.data.dao.WordDao;
 /**
  * Model - Repository
  * @author 나비이쁜이
- * @since 2020.01.20
+ * @since 2020.11.26
  */
 public class WordRepository {
 
     /**
      * DAO
      */
-    private WordDao wordDao;
+    private final WordDao wordDao;
 
     /**
      * Word List
      */
-    private LiveData<List<Word>> mAllWords;
+    private final LiveData<List<Word>> mAllWords;
 
     /**
      * 생성자

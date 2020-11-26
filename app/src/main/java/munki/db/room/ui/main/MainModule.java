@@ -8,7 +8,7 @@ import munki.db.room.data.repository.WordRepository;
 /**
  * [Dagger] - Inject with ViewModel
  * @author 나비이쁜이
- * @since 2020.01.20
+ * @since 2020.11.26
  */
 @Module
 public class MainModule {

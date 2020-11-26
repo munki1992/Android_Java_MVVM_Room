@@ -18,14 +18,14 @@ import munki.db.room.ui.base.BaseViewModel;
 /**
  * [MainActivity] View Model
  * @author 나비이쁜이
- * @since 2020.01.20
+ * @since 2020.11.26
  */
 public class MainViewModel extends BaseViewModel<MainNavigator> {
 
     /**
      * Room Repository
      */
-    private WordRepository mRepository;
+    private final WordRepository mRepository;
 
     /**
      * LiveData - Room Word

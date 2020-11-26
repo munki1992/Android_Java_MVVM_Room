@@ -11,7 +11,7 @@ import androidx.room.PrimaryKey;
  * [@PrimaryKey]    - 기본 키를 식별
  * [@ColumnInfo]    - Column Name이 변수 이름과 다른 경우에는 반드시 Column Name을 제공
  * @author 나비이쁜이
- * @since 2020.01.20
+ * @since 2020.11.26
  */
 @Entity(tableName = "search_table")
 public class Word {
@@ -19,7 +19,7 @@ public class Word {
     @NonNull
     @PrimaryKey
     @ColumnInfo(name = "search")
-    private String mSearchWord;
+    private final String mSearchWord;
 
     /**
      * this | instance

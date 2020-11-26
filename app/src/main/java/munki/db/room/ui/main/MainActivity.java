@@ -13,7 +13,7 @@ import static munki.db.room.BR.main;
 /**
  * [MVVM] MainActivity - [ToolBar - AppBar]를 이용한 컨텐츠 제공 메인 화면입니다.
  * @author 나비이쁜이
- * @since 2020.01.20
+ * @since 2020.11.26
  */
 public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewModel> implements MainNavigator {
 

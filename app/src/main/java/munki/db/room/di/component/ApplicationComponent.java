@@ -16,7 +16,7 @@ import munki.db.room.di.module.AppModule;
  * Dagger2에서는 Application scope인 @Singleton @Provides를 이용하기 위해서는 @Singleton @Component를 이용해야 합니다.
  * Dagger2에서는 @Component는 interface or abstract class에만 붙일 수 있습니다.
  * @author 나비이쁜이
- * @since 2020.01.20
+ * @since 2020.11.26
  */
 @Singleton
 @Component(modules = {AndroidSupportInjectionModule.class, AppModule.class, ActivityBuilder.class})

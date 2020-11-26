@@ -8,7 +8,7 @@ import munki.db.room.ui.main.MainModule;
 /**
  * [Dagger] Module - 생성 공급자
  * @author 나비이쁜이
- * @since 2020.01.20
+ * @since 2020.11.26
  */
 @Module
 public abstract class ActivityBuilder {

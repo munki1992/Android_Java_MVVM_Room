@@ -15,7 +15,7 @@ import dagger.android.AndroidInjection;
  * [MVVM] BaseActivity
  * B = databinding / M = viewModel
  * @author 나비이쁜이
- * @since 2020.01.20
+ * @since 2020.11.26
  */
 public abstract class BaseActivity<B extends ViewDataBinding, M extends BaseViewModel> extends AppCompatActivity {
 

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 /**
  * BaseViewHolder
  * @author 나비이쁜이
- * @since 2020.01.20
+ * @since 2020.11.26
  */
 public abstract class BaseViewHolder<T> extends RecyclerView.ViewHolder {
 

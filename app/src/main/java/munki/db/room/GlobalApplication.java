@@ -12,7 +12,7 @@ import munki.db.room.di.component.DaggerApplicationComponent;
 /**
  * Activity에서 공통적으로 적용되는 상위 MultiDexApplication
  * @author 나비이쁜이
- * @since 2020.01.20
+ * @since 2020.11.26
  */
 public class GlobalApplication extends DaggerApplication implements HasAndroidInjector {
 

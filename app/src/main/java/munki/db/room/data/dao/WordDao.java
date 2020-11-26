@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * DAO
  * @author 나비이쁜이
- * @since 2020.01.20
+ * @since 2020.11.26
  */
 @Dao
 public interface WordDao {

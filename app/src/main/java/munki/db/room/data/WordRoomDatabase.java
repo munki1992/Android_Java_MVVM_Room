@@ -17,7 +17,7 @@ import munki.db.room.data.dao.WordDao;
 /**
  * Room Database Backend
  * @author 나비이쁜이
- * @since 2020.01.20
+ * @since 2020.11.26
  */
 @Database(entities = {Word.class}, version = 1, exportSchema = false)
 public abstract class WordRoomDatabase extends RoomDatabase {
